@@ -38,10 +38,17 @@
         <label for="name">Name:</label>
         <input type="text" name="name">
       </div>
-
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone">
+      </div>
+      <div>
+        <label for="emergency-contact">Emergency Contact:</label>
+        <input type="checkbox" name="emergencyContact">
+      </div>
       <hr>
       <div class="d-flex space-between">
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="toggleRemoveContactForm()">Submit</button>
         <!-- TODO hide this form when this button is clicked -->
         <button class="btn-cancel" type="button" onclick="toggleAddContactForm()">cancel</button>
       </div>
